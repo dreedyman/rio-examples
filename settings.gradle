@@ -1,0 +1,24 @@
+rootProject.name = 'rio-examples'
+
+include ':calculator-api'
+include ':calculator-service'
+include ':events-api'
+include ':events-service'
+include ':events-ui'
+include ':springbean-api'
+include ':springbean-service'
+include ':workflow-api'
+include ':workflow-service'
+include ':tomcat'
+include ':distribution'
+
+project(':calculator-api').projectDir = "$rootDir/calculator/calculator-api" as File
+project(':calculator-service').projectDir = "$rootDir/calculator/calculator-service" as File
+project(':events-api').projectDir = "$rootDir/events/events-api" as File
+project(':events-service').projectDir = "$rootDir/events/events-service" as File
+project(':events-ui').projectDir = "$rootDir/events/events-ui" as File
+project(':springbean-api').projectDir = "$rootDir/springbean/springbean-api" as File
+project(':springbean-service').projectDir = "$rootDir/springbean/springbean-service" as File
+project(':workflow-api').projectDir = "$rootDir/workflow/workflow-api" as File
+project(':workflow-service').projectDir = "$rootDir/workflow/workflow-service" as File
+project(':tomcat').projectDir = "$rootDir/tomcat" as File
