@@ -39,10 +39,6 @@ configurations {
     integrationTestRuntime.extendsFrom testRuntime
 }
 
-task getRioDist() {
-
-}
-
 /*
  * Create the task that runs the integration tests found from the
  * configured source directory and uses the correct classpath.\
