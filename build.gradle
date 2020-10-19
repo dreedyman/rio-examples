@@ -16,7 +16,7 @@
 
 allprojects {
     group = 'org.rioproject.examples'
-    version = '5.9.0'
+    version = '5.9.1'
 
     ext {
         groovyVersion = "2.4.19"
@@ -24,7 +24,7 @@ allprojects {
         logbackVersion = "1.2.3"
         riverVersion = "2.2.2"
         slf4jVersion = "1.7.25"
-        rioVersion = "5.11.0"
+        rioVersion = "5.14.1"
         policyAll = file("${rootProject.projectDir}//distribution/rio-${rioVersion}/policy/policy.all").absolutePath
         logRuntime = ["org.slf4j:jul-to-slf4j:$slf4jVersion",
                       "ch.qos.logback:logback-classic:$logbackVersion"]
@@ -59,7 +59,7 @@ subprojects {
     repositories {
         mavenLocal()
         jcenter()
-		maven { url "https://dl.bintray.com/dreedyman/Rio" }
+		maven { url "https://dl.bintray.com/dreedyman/maven" }
     }
 }
 
