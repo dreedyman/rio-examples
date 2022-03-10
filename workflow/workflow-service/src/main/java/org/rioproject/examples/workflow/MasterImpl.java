@@ -29,10 +29,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * instances.
  */
 public class MasterImpl implements Master {
-    private static UUID id = UUID.randomUUID();
+    private static final UUID id = UUID.randomUUID();
     private JavaSpace space;
-    private Logger logger = LoggerFactory.getLogger(MasterImpl.class);
-    private AtomicBoolean hasBeenAdvertised = new AtomicBoolean(false);
+    private final Logger logger = LoggerFactory.getLogger(MasterImpl.class);
+    private final AtomicBoolean hasBeenAdvertised = new AtomicBoolean(false);
 
     /* Injected by Rio */
     @SuppressWarnings("unused")
